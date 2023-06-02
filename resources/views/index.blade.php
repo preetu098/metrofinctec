@@ -197,7 +197,7 @@ window.addEventListener("scroll", reveal21);
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 no-padding">
+                <div class="col-12 no-padding"> 
                     <div class="doctors-slider">
                         <div class="slide-item col-12">
                             <div class="team-block p-relative">
