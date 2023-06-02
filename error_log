@@ -1,0 +1,28 @@
+[22-Jul-2022 09:24:11 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 182 and defined in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(182): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(129): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->get('stack')
+#3 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#4 /home2 in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[22-Jul-2022 09:24:11 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 182 and defined in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(182): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(129): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->get('stack')
+#3 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#4 /home2 in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[22-Jul-2022 09:25:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 182 and defined in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(182): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(129): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->get('stack')
+#3 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#4 /home2 in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
+[22-Jul-2022 09:25:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Illuminate\Log\Logger::__construct() must be an instance of Psr\Log\LoggerInterface, instance of Monolog\Logger given, called in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php on line 182 and defined in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php:43
+Stack trace:
+#0 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(182): Illuminate\Log\Logger->__construct(Object(Monolog\Logger), Object(Illuminate\Events\Dispatcher))
+#1 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(129): Illuminate\Log\LogManager->createEmergencyLogger()
+#2 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(112): Illuminate\Log\LogManager->get('stack')
+#3 /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(590): Illuminate\Log\LogManager->driver()
+#4 /home2 in /home2/heliosfintec/public_html/vendor/laravel/framework/src/Illuminate/Log/Logger.php on line 43
