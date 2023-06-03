@@ -351,7 +351,7 @@
                             </li>
                             <li> <a href="team.html" class="text-custom-white">Team</a>
                             </li>
-                            <li> <a href="contact.html" class="text-custom-white">Contact Us</a>
+                            <li> <a href="{{ url('contactUs')}}" class="text-custom-white">Contact Us</a>
                             </li>
                         </ul>
                     </div>

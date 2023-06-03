@@ -26,6 +26,8 @@ Route::get('/run-migration',function(){
     dd('ok');
     
 });
+Route::get('contactUs',[AdminController::class,'contactUs']);
+
 
 
 Route::get('/clear-all',function(){

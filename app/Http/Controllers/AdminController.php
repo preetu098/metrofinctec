@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use App\Models\contactUs;
+use DB;
 
 
 class AdminController extends Controller
@@ -35,4 +37,11 @@ class AdminController extends Controller
         $user = User::create($userdata)->id;
          return back()->with('success','you have successfully login');
 }
+public function contactUs(){
+    $contact =DB::table('contact_us')->get();
+    return view('contactUs')->with('contact', $contact);
+    // echo "<pre>";print_r($contact);die;
+    
+}
+
 }
