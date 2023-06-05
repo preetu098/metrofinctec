@@ -1,6 +1,4 @@
-@php
-    // echo "<pre>"; print_r($contact); die;
-@endphp   
+@include('layout.header')
 <html lang="en">
 
 <head>
@@ -66,3 +64,6 @@
 </div>
 </body>
 </html>
+@include('layout.logofooter')
+@include('layout.mutualfundfooter')
+@include('layout.footer')

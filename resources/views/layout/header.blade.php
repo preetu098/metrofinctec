@@ -377,12 +377,13 @@
                                                 </li>
 
                                                 <li class="d-xs-none call-desktop">
-                                                    <div class="custom-dropdown">
+                                                    <div class="custom-dropdown" >
                                                         <select>
                                                             <option>Hindi</option>
                                                             <option>English</option>
                                                         </select>
                                                     </div>
+                                           
                                                 </li>
                                                 
                                             </ul>
@@ -883,7 +884,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style=" background: #ee4710;">
-                    <h5 class="modal-title" id="loginexampleModalLabel" style="color: #fff;">LOGIN sucessfull </h5>
+                    <h5 class="modal-title" id="loginexampleModalLabel" style="color: #fff;">LOGIN sucessfully </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                 </div>
@@ -899,3 +900,9 @@
 </div>
 
 <body>
+    {{-- <script src="http://tanslate.google.com/translate_a/element.js?cb=loadGoogletranslate">
+     
+           function loadGoogletranslate(){
+            new google.translate.TranslateElement("google_element");
+           }
+    </script> --}}
