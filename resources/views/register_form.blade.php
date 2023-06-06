@@ -1,9 +1,11 @@
+
 <div class="col-lg-3">
                     <center>
+               
                         <h5 class="mt-3 text-warning">Register your account</h5>
                     </center>
                     <!-- id="authform" -->
-                    <form class="mx-5"  action="{{url('/')}}/registersubmit"  method="POST" style="margin-top:20px">
+                    <form class="mx-5"  action="{{ route('registersubmit')}}"  method="POST" style="margin-top:20px">
                         @csrf
                         <!-- <form class="mx-5" style="margin-top:20px"> -->
                         <div class="mb-3 mt-3">
@@ -14,8 +16,11 @@
                             <div class="input-container ">
                                 <i class="fa fa-user icon"></i>
                                 <input type="text" class="form-control" required id="name" name="name"
-                                    aria-describedby="emailHelp" style="width:100%" placeholder="Name as per PAN">
+                                    aria-describedby="emailHelp" style="width:100%" value="{{old('name')}}" placeholder="Name as per PAN">
                                 <!-- <input class="input-field" type="text" placeholder="as Per PAN" style="width:100%" name="Name as per PAN"> -->
+                                @error('name')
+                                   <span class="text-danger">{{ $message }}</span>
+                                 @enderror
                             </div>
 
                         </div>
@@ -26,9 +31,15 @@
                             <div class="input-container">
                                 <i class="fa fa-envelope icon"></i>
                                 <input type="email" class="form-control" required id="email" name="email"
-                                    aria-describedby="emailHelp" placeholder="Email" style="width:100%">
+                                    aria-describedby="emailHelp" placeholder="Email" value="{{old('email')}}"  style="width:100%">
                                 <!-- <input class="input-field" type="text" placeholder="Email" style="width:100%" name="email"> -->
+                             
                             </div>
+                        </div>
+                        <div>
+                            @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                          @enderror
                         </div>
                         <div class="mb-3 mt-3">
                             <!--<label for="exampleInputPassword1"><font color="white">Mobile number</font></label>-->
@@ -36,8 +47,14 @@
                             <!--    placeholder="enter number">-->
                             <div class="input-container">
                                 <i class="fa fa-key icon"></i>
-                                <input class="input-field form-control" required type="password"
+                                <input class="input-field form-control" value="{{old('password')}}"  required type="password"
                                     placeholder="Password" style="width:100%" name="password">
+                                  
+                            </div>
+                            <div>
+                                @error('password')
+                                <span class="text-danger">{{ $message }}</span>
+                              @enderror
                             </div>
                             <div class="mb-3 mt-3">
                                 <!--<label for="exampleInputPassword1"><font color="white">Mobile number</font></label>-->
@@ -46,20 +63,33 @@
                                 <div class="input-container">
                                     <i class="fa fa-phone icon"></i>
                                     <input type="number" required class="form-control w-100 " id="phone"
-                                        name="phone" placeholder="Mobile" style="width:100%">
+                                        name="phone" placeholder="Mobile" value="{{old('phone')}}"  style="width:100%">
                                     <button type="submit"><i class="fa fa-check icon" id=""></i></button>
                                     {{-- <input type="submit" class="btn btn-primary" value="verify"> --}}
                                     <!-- <input class="input-field" type="number" placeholder="Mobile" style="width:100%" name="num"> -->
+            
+                                </div>
+                                <div>
+                                    @error('phone')
+                                    <span class="text-danger">{{ $message }}</span>
+                                  @enderror
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="mb-3 mt-3">
                             <div class="input-container">
                                 <i class="fa fa-lock icon"></i>
-                                <input type="text" class="form-control" name="otp" id="otp"
+                                <input type="text" class="form-control" value="{{old('otp')}}"  name="otp" id="otp"
                                     placeholder="Otp" style="width:100%">
                                 <!-- <input class="input-field" type="number" placeholder="Otp" name="otp" style="width:100%"> -->
+                              
                             </div>
+                        </div>
+                        <div>
+                            @error('otp')
+                            <span class="text-danger">{{ $message }}</span>
+                          @enderror
                         </div>
 
 
@@ -73,4 +103,9 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <!-- <button type="button" id="verifyotp" class="btn btn-primary">Submit</button> -->
                     </form>
+             
                 </div>
+                @if (Session::has('success'))
+               <h4 style="color:green">{{Session::get('success')}}</h4>
+                @endif
+          

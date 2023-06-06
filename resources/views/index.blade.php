@@ -83,9 +83,25 @@
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
-    function reveal2() {
+
+function reveal2(){
+    var reavealp = document.queryselectorAll(".reveal");
+     
+    for(var i= 0;i < reavealp.length;i++){
+        var windowHeight = window.innerHeight;
+        var elementTop = reavealp[i].getBoundingClientRect().top;
+        var elementVisible = 150 ;
+        if(elementTop < windowHeight - elementVisible){
+            reavealp[i].classList.add('active');
+        }else(
+            reaveals[i].classList.remove('active');
+        )
+        }
+    }
+
+
+function reveal2() {
   var reveals2 = document.querySelectorAll(".reveal2");
 
   for (var i = 0; i < reveals2.length; i++) {
@@ -100,8 +116,8 @@ window.addEventListener("scroll", reveal);
     }
   }
 }
-
 window.addEventListener("scroll", reveal2);
+
 
 function reveal21() {
   var reveals21 = document.querySelectorAll(".reveal21");
@@ -197,7 +213,7 @@ window.addEventListener("scroll", reveal21);
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 no-padding">
+                <div class="col-12 no-padding"> 
                     <div class="doctors-slider">
                         <div class="slide-item col-12">
                             <div class="team-block p-relative">

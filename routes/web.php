@@ -5,6 +5,8 @@ use App\Http\Controllers\MutualController;
 use App\Models\RegisterModel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,8 @@ Route::get('/run-migration',function(){
     dd('ok');
     
 });
+Route::get('contactUs',[AdminController::class,'contactUs']);
+
 
 
 Route::get('/clear-all',function(){
@@ -35,7 +39,7 @@ Route::get('/clear-all',function(){
 // Route::get('/trial', function () {return view('trail');})->name('trial');
 
 Route::get('/', function () {return view('index');})->name('index');
-
+Route::post('/',[AdminController::class,'registersubmit'])->name('registersubmit');
 
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 

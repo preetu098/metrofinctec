@@ -21,7 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'mob_num',
+        'phone',
+       // 'mob_num',
     ];
 
     // 'otp',
