@@ -85,20 +85,7 @@
 }
 window.addEventListener("scroll", reveal);
 
-function reveal2(){
-    var reavealp = document.queryselectorAll(".reveal");
-     
-    for(var i= 0;i < reavealp.length;i++){
-        var windowHeight = window.innerHeight;
-        var elementTop = reavealp[i].getBoundingClientRect().top;
-        var elementVisible = 150 ;
-        if(elementTop < windowHeight - elementVisible){
-            reavealp[i].classList.add('active');
-        }else(
-            reaveals[i].classList.remove('active');
-        )
-        }
-    }
+
 
 
 function reveal2() {
