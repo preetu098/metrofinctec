@@ -108,8 +108,8 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('swp');
     });
 
-    Route::get('/carloan', function () {
-        return view('carloan');
+    Route::get('/one-time-invest', function () {
+        return view('one_time_invest');
     });
 
     Route::get('/aboutus', function () {

@@ -790,7 +790,7 @@ window.addEventListener("scroll", reveal21);
                     </div>
                     <div class="col-md-4 reveal">
                         <h5>One Time investment</h5>
-                        <a href="/carloan">
+                        <a href="/one-time-invest">
                             <img src="https://addepar.com/assets/img/clip-financial-report.png" class="mt-5"
                                 style="height:200px;width:300px" />
                         </a>
