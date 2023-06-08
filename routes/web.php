@@ -40,6 +40,7 @@ Route::get('/clear-all',function(){
 
 Route::get('/', function () {return view('index');})->name('index');
 Route::post('/',[AdminController::class,'registersubmit'])->name('registersubmit');
+Route::post('login',[Admincontroller::class,'login'])->name('login');
 
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 

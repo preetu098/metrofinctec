@@ -278,7 +278,7 @@ window.addEventListener("scroll", reveal);
                 <img src="https://1000logos.net/wp-content/uploads/2021/08/Reliance-Industries-Limited-RIL-Logo-1966.png" style="height:100px;width:100px"/>
                
                      <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                         </center>
                                     </div>
@@ -293,7 +293,7 @@ window.addEventListener("scroll", reveal);
                                     <center>
                                     <img src="https://naftp.tatatechnologies.com/images/logo/TATA-and-Tata-Technologeis-STACKED-BLUE.png" style="height:100px;width:100px"/>
                                           <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                     </center>
                                     </div>
@@ -307,7 +307,7 @@ window.addEventListener("scroll", reveal);
                                     <center>
                                     <img src="https://cdn4.iconfinder.com/data/icons/fashion-vol-1/72/28-512.png" style="height:100px;width:100px"/>
                                           <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                     </center>
                                     </div>
@@ -321,7 +321,7 @@ window.addEventListener("scroll", reveal);
                                     <center>
                                     <img src="https://www.nsbpictures.com/wp-content/uploads/2019/03/chennai_super_kings_logo_freelogovectors.net_.png" style="height:100px;width:100px"/>
                                            <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                     </center>
                                      
@@ -336,7 +336,7 @@ window.addEventListener("scroll", reveal);
                                     <center>
                                     <img src="https://freepngimg.com/download/health/67606-green-healthcare-medicine-health-care-icon.png" style="height:100px;width:100px"/>
                                         <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                     </center>
                                     </div>
@@ -350,7 +350,7 @@ window.addEventListener("scroll", reveal);
                                     <center>
                                     <img src="https://jobseekers.vn/wp-content/uploads/2019/03/capgemini-logo-2.png" style="height:100px;width:100px"/>
                                      <div class="card-header bg-warning">
-                    <h5><a href="" class="text-info">Report</a></h5>
+                    <h5><a href="{{url('reportPage')}}" class="text-info">Report</a></h5>
                 </div>
                                     </center>
                                     </div>
@@ -732,137 +732,146 @@ preventing the buyer from selling shares in a short-term period.</p>
         <div class="jumbotron">
             <h4>FAQ's</h4>
                 <div class="row">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse">What are unlisted shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                               <div class="collapse" id="myCollapse">
-    <div class="card card-body">Equity shares of a company that are not yet listed on the Stock Exchanges like BSE,
-NSE, MSEI, etc. are called unlisted equity shares.</div>
-</center>
-                        </div>
-                    
-                </div>
-                <div class="row">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse1">Who sells private shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                               <div class="collapse" id="myCollapse1">
-    <div class="card card-body">Existing stakeholders, promoters or employees who have equity shares of an unlisted
-company and early investors who wish to get value of their investment. We create a
-platform for people to sell their ESOP shares to us at attractive valuations, creating
-liquidity for companies.</div>
-                        </center>
-                        </div>
-                </div>
-                  <div class="row">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btnms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse2">Are the shares of private companies in DEMAT form?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                               <div class="collapse" id="myCollapse2">
-    <div class="card card-body">Yes most shares are transferable through the DEMAT process. Some private
-companies might be transferred through physical mode as well.</div>
-</center>
-                        </div>
-                     
-                </div>
-                 <div class="row">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn  ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse3">What are pre-IPO shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                               <div class="collapse" id="myCollapse3">
-    <div class="card card-body">Pre-IPO shares are of companies who are up for an Initial Public Offering, making them
-a listed company on a Stock Exchange. An IPO event is recognised as unlocking true
-value out of a company’s share as it is available for every one to buy and sell on an
-exchange.</div>
-</center>
-                        </div>
-                        </div>
-              
-                
-                 <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse4">What are the pros of Investing in Unlisted Shares? <img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse4">
-    <div class="card card-body">
-        1.Reasonable Valuations Unlisted/Pre IPO trade a certain discount to their listed
-comparables and thus generate superior returns<br>
-2.Preferred Access Invest with VCs and Private Equity Funds in companies which
-are not otherwise available to retail investors<br>
-3.Diversification Get access to sectors/geographies which are not currently present
-in the listed markets (Eg. Startup space, Gaming Industry, IPL via CSK etc)
+                        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What are unlisted shares?
+      </button>
+    </h4>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p>  Equity shares of a company that are not yet listed on the Stock Exchanges like BSE,
+        NSE, MSEI, etc. are called unlisted equity shares
+      </p></div>
     </div>
-    </center>
-                        </div>
-                        </div>
-              
-                
-                 <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse5">What are the type of risks associated with an investment in unlisted shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse5">
-    <div class="card card-body">
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Who sells private shares?
+      </button>
+    </h4>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p>  Existing stakeholders, promoters or employees who have equity shares of an unlisted
+        company and early investors who wish to get value of their investment. We create a
+        platform for people to sell their ESOP shares to us at attractive valuations, creating
+        liquidity for companies.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Are the shares of private companies in DEMAT form?
+      </button>
+    </h4>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Yes most shares are transferable through the DEMAT process. Some private
+        companies might be transferred through physical mode as well.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        What are pre-IPO shares?
+      </button>
+    </h4>
+    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Pre-IPO shares are of companies who are up for an Initial Public Offering, making them
+        a listed company on a Stock Exchange. An IPO event is recognised as unlocking true
+        value out of a company’s share as it is available for every one to buy and sell on an
+        exchange.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        What are the pros of Investing in Unlisted Shares? 
+      </button>
+    </h4>
+    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        1.Reasonable Valuations Unlisted/Pre IPO trade a certain discount to their listed
+        comparables and thus generate superior returns<br>
+        2.Preferred Access Invest with VCs and Private Equity Funds in companies which
+        are not otherwise available to retail investors<br>
+        3.Diversification Get access to sectors/geographies which are not currently present
+        in the listed markets (Eg. Startup space, Gaming Industry, IPL via CSK etc)
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        What are the type of risks associated with an investment in unlisted shares?
+      </button>
+    </h4>
+    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
         1.Liquidity RiskSince the shares are not traded on an exchange, they are subject to
 liquidity risk.<br>
 2.Niche MarketThe market for unlisted shares is relatively smaller than the one on
 a stock exchange.
+      </div>
     </div>
-    </center>
-                        </div>
-                        </div>
-                        
-                          <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse6">What is the lock in period for any investment in unlisted shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse6">
-    <div class="card card-body">
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading7">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        What is the lock in period for any investment in unlisted shares?
+      </button>
+    </h4>
+    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
         The minimum lock in period applicable after purchase of unlisted shares is 6 months.
+      </div>
     </div>
-    </center>
-                        </div>
-                        </div>
-               <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse7">What is the safety regarding the payment?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse7">
-    <div class="card card-body">
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        What is the safety regarding the payment?
+      </button>
+    </h4>
+    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
         1.Altius is the market leader in the unlisted space and has been covered in leading
-publications (Click on link) (ET, Financial Express, Forbes etc).<br>
-2.We are the preferred partners for Reliance Securities, Karvy, Edelweiss and have
-worked with most other leading wealth management firms in the past.<br>
-3.We also provide an option of escrow services to our clients and have ICICI and
-HDFC Bank stand as our guarantors of executions.
+        publications (Click on link) (ET, Financial Express, Forbes etc).<br>
+        2.We are the preferred partners for Reliance Securities, Karvy, Edelweiss and have
+        worked with most other leading wealth management firms in the past.<br>
+        3.We also provide an option of escrow services to our clients and have ICICI and
+        HDFC Bank stand as our guarantors of executions.      </div>
     </div>
-    </center>
-                        </div>
-                        </div>
-                        
-                         <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse8">What is the exit timeframe for any investment in unlisted shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse8">
-    <div class="card card-body">
-       The time frame varies from company to company and in what stage of business the
-company is in. 2-5 years is considered an average timeframe for investments in unlisted
-shares. If the company does not come up for an IPO, the investor can sell the shares in
-the active grey market. We actively provide a two way quote in most of the stocks we
-deal in.
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+        What is the exit timeframe for any investment in unlisted shares?      </button>
+    </h4>
+    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        The time frame varies from company to company and in what stage of business the
+        company is in. 2-5 years is considered an average timeframe for investments in unlisted
+        shares. If the company does not come up for an IPO, the investor can sell the shares in
+        the active grey market. We actively provide a two way quote in most of the stocks we
+        deal in.
+      </div>
     </div>
-    </center>
-                        </div>
-                        </div>
-                        
-                            <div class="row ">
-                        <div class="col-lg-12">
-                            <center>
-                              <button type="button" class="btn ms-4" data-bs-toggle="collapse" data-bs-target="#myCollapse9">What are the tax implications of investing in unlisted shares?<img src="https://static.wixstatic.com/media/e69387_5d81ba784eef42008cbb57cb3e412fdc~mv2.gif" style="height:50px;width:100px"/></button>
-                              <div class="collapse" id="myCollapse9">
-    <div class="card card-body">
-       Unlisted Stock is not listed on any recognised stock exchange. Thus, the Company
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="heading10">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+        What are the tax implications of investing in unlisted shares?</button>
+    </h4>
+    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Unlisted Stock is not listed on any recognised stock exchange. Thus, the Company
 does not pay STT i.e. Securities Transaction Tax on such shares. The period of holding
 is 24 months.
 
@@ -873,20 +882,13 @@ unlisted shares of a Domestic Company or Foreign Company.<br>
 2.Short Term Capital Gain – taxed as per slab rates<br>
 3.In the case of a Non-Resident, LTCG on Unlisted Stock is 10% without
 Indexation
+      </div>
     </div>
-    </center>
-                        </div>
-                        </div>
-                        
-                </div>
-                
-                
-        </div>
+  </div>
+</div>
     </div>
-    
-    
-    
-    
+</div>    
+</div>    
     
     
     @include('layout.logofooter')  

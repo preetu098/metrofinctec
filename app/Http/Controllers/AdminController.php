@@ -35,7 +35,7 @@ class AdminController extends Controller
             'phone' => $request['phone'],
         ];
         $user = User::create($userdata)->id;
-         return back()->with('success','you have successfully login');
+         return back()->with('success','you have successfully register');
 }
 public function contactUs(){
     $contact =DB::table('contact_us')->get();
@@ -43,5 +43,6 @@ public function contactUs(){
     // echo "<pre>";print_r($contact);die;
     
 }
+
 
 }

@@ -113,4 +113,3 @@ function timePeriodInput(e){
 
     monthlyInvestmentTimePeriodFunction();
 }
-//time-period

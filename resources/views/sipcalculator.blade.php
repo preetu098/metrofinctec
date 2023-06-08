@@ -15,6 +15,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="range-slider">
+                            <h3>SIP Calculator</h3>
                             <span>
                                 <label for="customRange3" class="form-label">Monthly Investment</label>
                                 <abbr sign-attr="₹">
@@ -81,9 +82,7 @@
                                 <a href="https://mutualfund.modvent.com/trial" class="btn btn-warning">Back</a>
                             </div>
                             <div class="col-lg-6">
-                                <div class="container">
-                                    wd/lmwelm
-                                </div>
+                                
                             </div>
                     </div>
             </div>
