@@ -16,7 +16,7 @@
                             <div class="input-container ">
                                 <i class="fa fa-user icon"></i>
                                 <input type="text" class="form-control" required id="name" name="name"
-                                    aria-describedby="emailHelp" style="width:100%" value="{{old('name')}}" placeholder="Name as per PAN">
+                                    aria-describedby="emailHelp" style="width:100%" value="{{old('name')}}" placeholder="Name as per PAN" onkeyup="value=value.replace(/[^\a-\z\A-\Z ]/g,'')">
                                 <!-- <input class="input-field" type="text" placeholder="as Per PAN" style="width:100%" name="Name as per PAN"> -->
                                 @error('name')
                                    <span class="text-danger">{{ $message }}</span>
@@ -63,7 +63,7 @@
                                 <div class="input-container">
                                     <i class="fa fa-phone icon"></i>
                                     <input type="number" required class="form-control w-100 " id="phone"
-                                        name="phone" placeholder="Mobile" value="{{old('phone')}}"  style="width:100%">
+                                        name="phone" placeholder="Mobile" value="{{old('phone')}}"  style="width:100%"   onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" >
                                     <button type="submit"><i class="fa fa-check icon" id=""></i></button>
                                     {{-- <input type="submit" class="btn btn-primary" value="verify"> --}}
                                     <!-- <input class="input-field" type="number" placeholder="Mobile" style="width:100%" name="num"> -->

@@ -1,3 +1,4 @@
+@include('layout.header')
 <html lang="en" style="height: 100%;"><head>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -226,48 +227,6 @@ color-scheme:light !important;}</style><script src="https://cdn.jsdelivr.net/emo
 				
 			
 				
-				<div class="accordion-item mt-3" style="padding:0px 20px 0px 20px;">
-					<a class="" href="/buy-pre-ipo/" id="id_marketplace" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title=" Daily Price Updates">
-						Key Ratio</a>
-					
-				</div>
-				<div class="accordion-item mt-3" style="padding: 0px 20px 0px 20px;">
-					<a class="" href="/offers/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title="Offers">
-						Peers</a>
-					
-					
-				</div>
-
-				<div class="accordion-item mt-3" style="padding: 0px 20px 0px 20px;">
-					<a class="" href="/partner/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title="Partners">
-						Financials
-
-					</a>
-				
-				</div>
-				
-				<div class="accordion-item mt-3" style="padding: 0px 20px 0px 20px;">
-					<a class="" href="/partner/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title="Partners">
-						OwnerShip
-
-					</a>
-				
-				</div>
-				
-					<div class="accordion-item mt-3" style="padding: 0px 20px 0px 20px;">
-					<a class="" href="/partner/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title="Partners">
-						News
-
-					</a>
-				
-				</div>
-					<div class="accordion-item mt-3" style="padding: 0px 20px 0px 20px;">
-					<a class="" href="/partner/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" style="color: #212529;" data-bs-original-title="Partners">
-						Events
-
-					</a>
-				
-				</div>
 				
 				
 				
@@ -305,47 +264,7 @@ color-scheme:light !important;}</style><script src="https://cdn.jsdelivr.net/emo
 		</div>
 	</div>
 	<!-- // MOBILE MENU // -->
-	<nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top bg-white d-none d-md-block" style="z-index: 1021;">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="/"><img src="images/logochange.jpeg" class="img-fluid" width="120"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavBarPlanify" aria-controls="mainNavBarPlanify" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse fwb-candara" id="mainNavBarPlanify">
-				<ul class="navbar-nav mb-lg-0">
-					<li class="nav-item mx-2 dropdown">
 	
-
-</li>
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Key Ratio </a>
-	
-</li>
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Peers</a>
-	
-</li>
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Financials
-</a>
-	
-</li>
-
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ownerShip
-</a>
-	
-</li>
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> News
-</a>
-	
-</li>
-<li class="nav-item mx-2 dropdown">
-	<a class="nav-link text-menu-indigo fw-bold position-relative" href="#" id="productsDD" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Events
-</a>
-	
-</li>
 
 
 

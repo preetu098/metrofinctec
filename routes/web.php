@@ -40,8 +40,17 @@ Route::get('/clear-all',function(){
 
 Route::get('/', function () {return view('index');})->name('index');
 Route::post('/',[AdminController::class,'registersubmit'])->name('registersubmit');
-Route::post('login',[Admincontroller::class,'login'])->name('login');
+//employ login
+Route::get('/employ-login',function(){
+    return view('employ.employlogin');
+});
+Route::post('/employ-login',[AdminController::class,'employlogin'])->name('employlogin');
 
+//employ register
+Route::get('employ-register',function(){
+    return view('employ.employregister');
+});
+Route::post('employ-register',[AdminController::class,'employregister'])->name('employregister');
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 
 Route::post('/registersubmit', [MutualController::class, 'registersubmit']);

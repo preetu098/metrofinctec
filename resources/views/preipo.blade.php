@@ -384,7 +384,7 @@ window.addEventListener("scroll", reveal);
         </div>
     </div>
     <!-- Header End -->
-<section style="background-image:url('https://c4.wallpaperflare.com/wallpaper/514/981/272/smoky-white-bw-black-wallpaper-preview.jpg');background-repeat:no-repeat;background-size:cover;margin-top:-26px" class="reveal2">
+{{-- <section style="background-image:url('https://c4.wallpaperflare.com/wallpaper/514/981/272/smoky-white-bw-black-wallpaper-preview.jpg');background-repeat:no-repeat;background-size:cover;margin-top:-26px" class="reveal2">
   
     <br>
     <br>
@@ -407,14 +407,14 @@ a sizeable discount to the buyers if they purchase property before construction.
 </p>
 <br>
         </div>
-        <!-- <div class="col-lg-4">
+        <!-- <div class="col-lg-4"> --}}
             <img src="https://static.wixstatic.com/media/00a0e0_b17cd951149d43f99a0bd7c329b4ec92~mv2.gif" style="height:300px;width:300px;"/>
         </div> -->
-    </div>
+    {{-- </div>
    </div>
    <br>
     <br>
-</section>
+</section> --}}
 
 <section>
     <div class="container">

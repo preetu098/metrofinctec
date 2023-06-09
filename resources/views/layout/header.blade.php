@@ -363,8 +363,10 @@
                                                        <button class="btn btn-light">
                                                        <a href="javascript:void(0)" class="btn-bells"
                                                                 data-dropdown="dropdown" style="color:blue;font-size:10px;">Family Know After Me</button></a>
-                                                    </button>
+                                                    
                                                 </li>
+                                            
+                                                <li> <a href="{{ url('employ-login')}}" style="color:blue;font-size:10px;" class="btn btn-light">Employ Login</a>
                                                 <li class="d-xs-none call-desktop">
                                                     <div class="custom-dropdown dropdown google-dropdown">
                                                         <a href="" data-dropdown="dropdown"
@@ -879,6 +881,7 @@
     </div> -->
 
     {{-- after login model start --}}
+    @yield('content')
     <div class="modal fade" id="sucessMessage" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="afterloginexampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
