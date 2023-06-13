@@ -11,22 +11,22 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Employ Login</h2>
+              <h2 class="text-uppercase text-center mb-5">Employee Login</h2>
 
               <form action="{{route('employlogin')}}" method="POST">
               @csrf
            
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                  <input type="email" id="form3Example3cg" name="email" value="" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example3cg"> Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <input type="password" id="form3Example4cg" name="password" value="" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example4cg">Password</label>
                 </div>
-
+                  {{session('error')}}
                 {{-- <div class="form-outline mb-4">
                   <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
                   <label class="form-label" for="form3Example4cdg">Confirm password</label>

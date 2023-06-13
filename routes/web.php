@@ -50,6 +50,10 @@ Route::post('/employ-login',[AdminController::class,'employlogin'])->name('emplo
 Route::get('employ-register',function(){
     return view('employ.employregister');
 });
+Route::group(['middleware'=> ['web','checkStudent']],function(){
+   Route::get('dashboard',[AdminController::class,'employdashboard']);
+});
+
 Route::post('employ-register',[AdminController::class,'employregister'])->name('employregister');
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 
