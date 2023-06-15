@@ -36,7 +36,7 @@ class MutualController extends Controller
         if ($user = User::create($data)) {
             Auth::login($user);
             // response()->json(["message" => "success"])  
-            dd('user created successfully'); 
+            // dd('user created successfully'); 
             return  redirect()->back()->with('message','Registration Successfull');
         } else {
             return  redirect()->back()->with('error_message','Error Occured'); 
@@ -59,7 +59,7 @@ class MutualController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/trial');
+        return redirect('/');
     }
 
     public function verifyotp(Request $request)

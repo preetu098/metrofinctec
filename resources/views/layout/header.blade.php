@@ -170,7 +170,16 @@
                                                         </div>
 
                                                     </li> --}}
-
+                                                    @if ($errors->any())
+                                                        @foreach ($errors->all() as $errors )
+                                                        <p style="color: red">{{$errors}}</p>
+                                                        @endforeach
+                                                        @endif
+                                                        @if (Session::has('error'))
+                                                        <p style="color:red" >{{Session::get('error')}}</p>
+                                                        @endif
+                                                           <form action="{{route('client_login')}}" method="POST">
+                                                            @csrf
                                                         <li class="d-xs-none call-desktop" id="loginformpopupopen">
                                                             <div class="new-notification-bell custom-dropdown dropdown">
                                                                 <!-- <button class="btn btn-light" style="width:50px;margin-left:-40px"> -->
@@ -181,37 +190,33 @@
                                                                 <div class="custom-dropdown-container dropdown-open-menu"
                                                                     id="loginformclose">
                                                                     <div class="notification-bell-box" id="">
-                                                                        
+
                                                                         <div class="notification-bell-top">
                                                                             <h6 style="color: white;">Login Form
                                                                                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button
-                                                                                style="color:white"
-                                                                                data-dropdown="dropdown">Close</button>
+                                                                                    style="color:white"
+                                                                                    data-dropdown="dropdown">Close</button>
                                                                             </h6>
                                                                             <a href="javascript:void(0)"
-                                                                            class="bell-dropdown-close"
-                                                                            data-dropdownclose="close">
-                                                                            <span class="icon-close"></span></a>
+                                                                                class="bell-dropdown-close"
+                                                                                data-dropdownclose="close">
+                                                                                <span class="icon-close"></span></a>
                                                                         </div>
                                                                         <div class="notification-bell-bottom">
                                                                             <div class="site-bell-dropdown">
                                                                                 <ul
-                                                                                class="notification-bell-list notification-bell-icons">
-                                                                                <select name="" id="">
-                                                                                    <option value="">Employee</option>
-                                                                                    <option value="">User</option>
-                                                                                </select>
-                                                                                <li>
-                                                                                    <div class="row">
-                                                                                        <div class="col-md-12">
-                                                                                            <div class="row">
+                                                                                    class="notification-bell-list notification-bell-icons">
+
+                                                                                    <li>
+                                                                                        <div class="row">
+                                                                                            <div class="col-md-12">
+                                                                                                <div class="row">
                                                                                                     <div
-                                                                                                
-                                                                                                    class="col-md-12 col-lg-12">
-                                                                                                </div>
-                                                                                                <div
-                                                                                                class="col-md-12 col-lg-12 mpl-0 mpr-0">
-                                                                                                <div
+                                                                                                        class="col-md-12 col-lg-12">
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-12 col-lg-12 mpl-0 mpr-0">
+                                                                                                        <div
                                                                                                             class="logo-without-back">
                                                                                                             <menu-header
                                                                                                                 _nghost-gsv-c11=""
@@ -226,27 +231,27 @@
                                                                                                                             <div _ngcontent-gsv-c11=""
                                                                                                                                 class="col-md-12 fi-logo-div">
                                                                                                                                 <div _ngcontent-gsv-c11=""
-                                                                                                                                class="logout-menu d-inline-flex align-items-center float-right">
-                                                                                                                                <span
-                                                                                                                                _ngcontent-gsv-c11=""
-                                                                                                                                class="ng-tns-c11-0">
-                                                                                                                            </span>
+                                                                                                                                    class="logout-menu d-inline-flex align-items-center float-right">
+                                                                                                                                    <span
+                                                                                                                                        _ngcontent-gsv-c11=""
+                                                                                                                                        class="ng-tns-c11-0">
+                                                                                                                                    </span>
+                                                                                                                                </div>
+                                                                                                                                <div _ngcontent-gsv-c11=""
+                                                                                                                                    class="d-none">
+
+                                                                                                                                    <input
+                                                                                                                                        _ngcontent-gsv-c11=""
+                                                                                                                                        class="form-control"
+                                                                                                                                        type="text">
+                                                                                                                                </div>
+                                                                                                                            </div>
                                                                                                                         </div>
-                                                                                                                        <div _ngcontent-gsv-c11=""
-                                                                                                                        class="d-none">
-                                                                                                                    
-                                                                                                                        <input
-                                                                                                                        _ngcontent-gsv-c11=""
-                                                                                                                        class="form-control"
-                                                                                                                        type="text">
-                                                                                                                    </div>
+                                                                                                                    </header>
                                                                                                                 </div>
-                                                                                                            </div>
-                                                                                                        </header>
-                                                                                                    </div>
-                                                                                                </menu-header>
-                                                                                            </div>
-                                                                                            <div
+                                                                                                            </menu-header>
+                                                                                                        </div>
+                                                                                                        <div
                                                                                                             class="qsignin-form">
                                                                                                             <form
                                                                                                                 autocomplete="off"
@@ -267,6 +272,7 @@
                                                                                                                         placeholder="enter email id"
                                                                                                                         pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$"
                                                                                                                         required=""
+                                                                                                                        value="email"
                                                                                                                         type="email"
                                                                                                                         ng-reflect-required=""
                                                                                                                         ng-reflect-pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-"
@@ -279,16 +285,17 @@
                                                                                                                     <input
                                                                                                                         class="form-control ng-star-inserted ng-dirty ng-valid ng-touched"
                                                                                                                         maxlength="16"
-                                                                                                                        minlength="8"
+                                                                                                                        minlength="6"
                                                                                                                         placeholder="enter password"
-                                                                                                                        name="pwd"
-                                                                                                                        id="pwd"
+                                                                                                                        name="password"
+                                                                                                                        id="password"
+                                                                                                                        value="password"
                                                                                                                         required=""
                                                                                                                         ng-reflect-required=""
-                                                                                                                        ng-reflect-minlength="8"
+                                                                                                                        ng-reflect-minlength="6"
                                                                                                                         ng-reflect-maxlength="16"
                                                                                                                         ng-reflect-name="pwd"
-                                                                                                                        ng-reflect-model="24091993"
+                                                                                                                        ng-reflect-model="240919"
                                                                                                                         type="password">
                                                                                                                     <div
                                                                                                                         class="forgot-password">
@@ -302,8 +309,6 @@
 
                                                                                                                     <input
                                                                                                                         type="submit"
-                                                                                                                        id="loginsubmit"
-                                                                                                                        name="loginsubmit"
                                                                                                                         value="Sign In"
                                                                                                                         class="btn btn-primary text-white"
                                                                                                                         style="background-color: #5b99eb;">
@@ -339,6 +344,7 @@
                                                                 </div>
                                                             </div>
                                                         </li>
+                                                    </form>
                                                         {{-- <li class="d-xs-none call-desktop">
                                                         <div class="custom-dropdown dropdown google-dropdown">
                                                             <a href="" data-dropdown="dropdown"
@@ -384,6 +390,9 @@
                                                     <li> <a href="{{ url('employ-login') }}"
                                                             style="color:blue;font-size:10px;"
                                                             class="btn btn-light">Employee Login</a>
+                                                    <li> <a href="{{ url('distributor-login') }}"
+                                                            style="color:blue;font-size:10px;"
+                                                            class="btn btn-light">Distributor Login</a>
                                                     <li class="d-xs-none call-desktop">
                                                         <div class="custom-dropdown dropdown google-dropdown">
                                                             <a href="" data-dropdown="dropdown"

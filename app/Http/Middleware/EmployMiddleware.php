@@ -16,11 +16,7 @@ class EmployMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::guard('custom')->check()) {
-            return $next($request);
-        }
-
-        throw new AuthenticationException('Unauthenticated.');
+      
     }
 
 }

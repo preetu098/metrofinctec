@@ -131,20 +131,65 @@ public function contactUs(){
         //     }
         // }
         public function employlogin(Request $request){
-              $email = $request->post('email');
-              $password = $request->post('password');
+              $email = $request->input('email');
+              $password = $request->input('password');
               $result = UserEmploy::where(['email'=>$email,'password'=>$password])->first();
               if(isset($result['0']->id)){
-
+                 $request->session()->put('ADMIN_LOGIN',true);
+                 $request->session()->put('ADMIN_ID',$result['0']->id);
+                 return redirect('employ-dashboard');
               }else{
-                $result->session()->flash('error','Please enter the valid login detail');
-                return redirect('employ.employlogin');
+                // $result->session()->flash('error','Please enter the valid login detail');
+                return redirect('/employ-dashboard');
 
               }
         }
         public function employdashboard(){
-            return view('employ.dashboard');
+            return view('employ.employdashboard');
         }
+        public function client_login(Request $request){
+            // $request->validate([
+            //     'email'=>'string|required|email',
+            //     'password'=>'string|required'
+            // ]);
+            // dd($request->only(['email','password']));
+            //    echo "hi";die;
+            // $usercredential = $request->only(['email','password']);
+            // dd($usercredential);
+
+            $usercredential = $request->validate([
+                'email' => ['required', 'email'],
+                'password' => ['required'],
+            ]);
+       
+            if(Auth::attempt($usercredential)){
+        
+                // $request->session()->regenerate();
+                return redirect('/clentdashboard');
+           }else{
+              return back()->with('error','invalid Crenditials');
+           }      
+        }
+        public function loadclient(){
+            if(auth()->user()){
+                return redirect('/clentdashboard');
+            }
+            return view('index');
+        }
+        public function logout(Request $request){
+            $request->session()->flush();
+            Auth::logout();
+            return redirect('/');
+        }
+    public function clentdashboard(){
+       return view('client.clientdashboard');
+    }
+    public function distributor_login(){
+        return view('distributor.distributorlogin');
+    }
+    public function distributor_register(){
+        return view('distributor.distributoregister');
     }
 
+}
 
