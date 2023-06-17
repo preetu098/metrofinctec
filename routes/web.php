@@ -53,19 +53,27 @@ Route::get('employ-register',function(){
 Route::group(['middleware'=> ['web','']],function(){
 });
 Route::get('employ-dashboard',[AdminController::class,'employdashboard']);
+Route::post('employ-register',[AdminController::class,'employregister'])->name('employregister');
 
-//client login
+//client 
 Route::post('client_login',[AdminController::class,'client_login'])->name('client_login');
 Route::get('/clentdashboard',[AdminController::class,'clentdashboard']);
 Route::get('/',[AdminController::class,'loadclient']);
 
+//distributor 
+Route::get('/distributor-login',[AdminController::class,'distributor_login']);
+Route::post('distributor-login',[AdminController::class,'distributorlogin'])->name('distributorlogin');
+Route::get('/distributor-register',[AdminController::class,'distributor_register']);
+Route::post('/distributor-register',[AdminController::class,'distributorregister'])->name('distributorregister');
+
+Route::group(['middleware'=> ['web','checkDistributor']],function(){
+});
+Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
 
 
-
-Route::post('employ-register',[AdminController::class,'employregister'])->name('employregister');
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 
-Route::post('/registersubmit', [MutualController::class, 'registersubmit']);
+// Route::post('/registersubmit', [MutualController::class, 'registersubmit']);
 
 Route::post('/loginsubmit', [MutualController::class, 'loginsubmit']);
 

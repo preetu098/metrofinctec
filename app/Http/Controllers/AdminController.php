@@ -9,26 +9,28 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\contactUs;
 use App\Models\UserEmploy;
 use Illuminate\Support\Facades\Session;
+use App\Models\Access;
 use DB;
 
 
 class AdminController extends Controller
 {
     public function registersubmit(Request $request){
-         $this->validate($request,[
+        $this->validate($request,[
             'name' => 'required|string',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:auths',
             'password' => 'required|min:6',
             'otp' => 'required',
-            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|unique:users|min:10',   
+            'mobile' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|unique:auths|min:10',   
         ],[
             'name.required' => __('First Name required'),
             'email.required' => __('Email is required'),
             'password.required' => __('Password is required'),
             'password.min'=>__('Minimum Character should be six'),
-            'phone.required' => __('Password is required'),
+            'mobile.required' => __('phone is required'),
             
         ]);
+        // echo 'hi';die;
         $userdata = [
             'name' => $request['name'],
             'email' => $request['email'],
@@ -36,7 +38,7 @@ class AdminController extends Controller
             'otp' => $request->input('otp'),         
             'phone' => $request['phone'],
         ];
-        $user = User::create($userdata)->id;
+        $user = Access::create($userdata)->id;
          return back()->with('success','you have successfully register');
 }
 public function contactUs(){
@@ -45,7 +47,8 @@ public function contactUs(){
     // echo "<pre>";print_r($contact);die;
     
 }
-    public function employregister(Request $request){
+public function employregister(Request $request){
+        //echo 'hi';die;
         $this->validate($request,[
             'name' => 'required|string',
             'email' => 'required|email|unique:user_employ',
@@ -59,7 +62,6 @@ public function contactUs(){
            'phone.required' => __('Password is required'),
            
         ]);
-        // echo 'hi';die;
        $userdata = [
            'name' => $request['name'],
            'email' => $request['email'],
@@ -131,37 +133,32 @@ public function contactUs(){
         //     }
         // }
         public function employlogin(Request $request){
-              $email = $request->input('email');
-              $password = $request->input('password');
-              $result = UserEmploy::where(['email'=>$email,'password'=>$password])->first();
-              if(isset($result['0']->id)){
-                 $request->session()->put('ADMIN_LOGIN',true);
-                 $request->session()->put('ADMIN_ID',$result['0']->id);
-                 return redirect('employ-dashboard');
-              }else{
-                // $result->session()->flash('error','Please enter the valid login detail');
+      
+              $request->validate([
+                'email'=>'string|required|email',
+                'password'=>'string|required'
+            ]);
+            $user= UserEmploy::where(['email'=>$request->email])->first();
+            if(!$user || !Hash::check($request->password,$user->password))
+            {
+                return back()->with('error','invalid Crenditials');
+            }else{
+                $request->session()->put('user',$user);
                 return redirect('/employ-dashboard');
-
-              }
         }
+    }
         public function employdashboard(){
             return view('employ.employdashboard');
         }
         public function client_login(Request $request){
-            // $request->validate([
-            //     'email'=>'string|required|email',
-            //     'password'=>'string|required'
-            // ]);
+            $request->validate([
+                'email'=>'string|required|email',
+                'password'=>'string|required'
+            ]);
             // dd($request->only(['email','password']));
             //    echo "hi";die;
-            // $usercredential = $request->only(['email','password']);
+            $usercredential = $request->only(['email','password']);
             // dd($usercredential);
-
-            $usercredential = $request->validate([
-                'email' => ['required', 'email'],
-                'password' => ['required'],
-            ]);
-       
             if(Auth::attempt($usercredential)){
         
                 // $request->session()->regenerate();
@@ -191,5 +188,49 @@ public function contactUs(){
         return view('distributor.distributoregister');
     }
 
+    public function distributorregister(Request $request){
+        $this->validate($request,[
+            'name' => 'required|string',
+            'email' => 'required|email|unique:user_employ',
+            'password' => 'required|min:6',
+            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|unique:user_employ|min:10',   
+        ],[
+           'name.required' => __('First Name required'),
+           'email.required' => __('Email is required'),
+           'password.required' => __('Password is required'),
+           'password.min'=>__('Minimum Character should be six'),
+           'phone.required' => __('Password is required'),
+           
+        ]);
+        // echo 'hi';die;
+       $userdata = [
+           'name' => $request['name'],
+           'email' => $request['email'],
+           'password' => Hash::make($request['password']),
+           'otp' => $request->input('otp'),         
+           'phone' => $request['phone'],
+       ];
+    //    print_r($userdata);die;
+       $user = User::create($userdata)->id;
+        return back()->with('success','you have successfully register');
 }
+            public function distributorlogin(Request $request){
+                $request->validate([
+                    'email'=>'string|required|email',
+                    'password'=>'string|required'
+                ]);
+                $user= User::where(['email'=>$request->email])->first();
+                if(!$user || !Hash::check($request->password,$user->password))
+                {
+                    return back()->with('error','invalid Crenditials');
+                }else{
+                    $request->session()->put('user',$user);
+                    return redirect('/distributordashboard');
 
+          
+            }}
+            public function distributordashboard(){
+                return view('distributor.distributordashboard');
+            }
+
+}

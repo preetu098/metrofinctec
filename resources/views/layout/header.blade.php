@@ -40,7 +40,11 @@
     <link href="assets1/css/style.css" rel="stylesheet">
     <link href="assets1/css/font/flaticon.css" rel="stylesheet">
     <link href="assets1/font/flaticon.css" rel="stylesheet">
-
+    @if (Session::has('error'))
+    <script>
+        alert("{{ Session::get('error') }}");
+    </script>
+    @endif
 </head>
 <style>
 
@@ -170,23 +174,17 @@
                                                         </div>
 
                                                     </li> --}}
-                                                    @if ($errors->any())
-                                                        @foreach ($errors->all() as $errors )
-                                                        <p style="color: red">{{$errors}}</p>
-                                                        @endforeach
-                                                        @endif
-                                                        @if (Session::has('error'))
-                                                        <p style="color:red" >{{Session::get('error')}}</p>
-                                                        @endif
-                                                           <form action="{{route('client_login')}}" method="POST">
-                                                            @csrf
+                                               
+                                                    <form action="{{route('client_login')}}" method="POST">
+                                                        @csrf
                                                         <li class="d-xs-none call-desktop" id="loginformpopupopen">
                                                             <div class="new-notification-bell custom-dropdown dropdown">
                                                                 <!-- <button class="btn btn-light" style="width:50px;margin-left:-40px"> -->
-                                                                <a href="javascript:void(0)" class="btn-bells"
+                                                                    <a href="javascript:void(0)" class="btn-bells"
                                                                     data-dropdown="dropdown"
                                                                     style="color:blue;margin-left:-0px;font-size:10px;">Login</a>
-                                                                <!-- </button> -->
+                                                                    <!-- </button> -->
+                                                                
                                                                 <div class="custom-dropdown-container dropdown-open-menu"
                                                                     id="loginformclose">
                                                                     <div class="notification-bell-box" id="">

@@ -13,7 +13,7 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Distributor Login</h2>
 
-              <form action="" method="POST">
+              <form action="{{route('distributorlogin')}}" method="POST">
               @csrf
            
 

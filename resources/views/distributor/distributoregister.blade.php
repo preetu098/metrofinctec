@@ -10,9 +10,12 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
+              @if (Session::has('success'))
+              <h4 style="color:green">{{Session::get('success')}}</h4>
+               @endif
               <h2 class="text-uppercase text-center mb-5">Distributor Register</h2>
 
-              <form action="" method="POST">
+              <form action="{{route('distributorregister')}}" method="POST">
                  @csrf
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example1cg">Name</label>
@@ -56,11 +59,13 @@
                     class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="{{ url('')}}"
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="{{ url('distributor-login')}}"
                     class="fw-bold text-body"><u>Login here</u></a></p>
 
               </form>
-
+              @if (Session::has('error'))
+              <p style="color:red">{{Session::get('error')}}</p>
+              @endif
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class EmployMiddleware
+class DistributorMiddleware
 {
     /**
      * Handle an incoming request.
@@ -16,8 +16,11 @@ class EmployMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-      
+        if ($request->session()->has('user')) {
+            // User is already logged in
+            return redirect('/distributordashboard');
+        }
+        return $next($request);
+        
     }
-
 }
-

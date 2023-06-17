@@ -48,7 +48,7 @@
                             <div class="input-container">
                                 <i class="fa fa-key icon"></i>
                                 <input class="input-field form-control" value="{{old('password')}}"  required type="password"
-                                    placeholder="Password" style="width:100%" name="password">
+                                    placeholder="Enter the Password" style="width:100%" name="password">
                                   
                             </div>
                             <div>
@@ -63,10 +63,10 @@
                                 <div class="input-container">
                                     <i class="fa fa-phone icon"></i>
                                     <input type="number" required class="form-control w-100 " id="phone"
-                                        name="phone" placeholder="Mobile" value="{{old('phone')}}"  style="width:100%"   onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" >
+                                        name="mobile" placeholder="mobile" value="{{old('mobile')}}"  style="width:100%"   onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" >
                                     <button type="submit"><i class="fa fa-check icon" id=""></i></button>
                                     {{-- <input type="submit" class="btn btn-primary" value="verify"> --}}
-                                    <!-- <input class="input-field" type="number" placeholder="Mobile" style="width:100%" name="num"> -->
+                                    <!-- <input class="input-field" type="number" placeholder="mobile" style="width:100%" name="num"> -->
             
                                 </div>
                                 <div>

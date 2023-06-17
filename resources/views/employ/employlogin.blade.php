@@ -1,7 +1,11 @@
 @extends('layout.header')
 @section('content')
 
-    
+@if (Session::has('error'))
+<script>
+    alert("{{ Session::get('error') }}");
+</script>
+@endif
 
 <section class="vh-100 bg-image"
   style="background-image: url('https://c4.wallpaperflare.com/wallpaper/514/981/272/smoky-white-bw-black-wallpaper-preview.jpg');">

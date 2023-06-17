@@ -1,3 +1,2 @@
-@php
-    echo "distributor Dashboard";
-@endphp
+<h1>Distributor Dashboard</h1>
+<a href="{{url('/logout')}}">Logout</a>
