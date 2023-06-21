@@ -66,9 +66,14 @@ Route::post('distributor-login',[AdminController::class,'distributorlogin'])->na
 Route::get('/distributor-register',[AdminController::class,'distributor_register']);
 Route::post('/distributor-register',[AdminController::class,'distributorregister'])->name('distributorregister');
 
-Route::group(['middleware'=> ['web','checkDistributor']],function(){
+
+Route::middleware('checkDistributor')->group(function () {
+    // Routes that require the middleware
 });
-Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
+
+Route::group(['middleware'=> ['web','checkDistributor']],function(){
+    Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
+});
 
 
 // Route::get('/login', [MutualController::class, 'login'])->name('login');

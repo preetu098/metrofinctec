@@ -148,7 +148,7 @@ public function employregister(Request $request){
         }
     }
         public function employdashboard(){
-            return view('employ.employdashboard');
+            return view('employ.admin.index');
         }
         public function client_login(Request $request){
             $request->validate([
@@ -230,7 +230,7 @@ public function employregister(Request $request){
           
             }}
             public function distributordashboard(){
-                return view('distributor.distributordashboard');
+                return view('distributor.admin.index');
             }
 
 }

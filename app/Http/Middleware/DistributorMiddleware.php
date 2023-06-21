@@ -16,9 +16,9 @@ class DistributorMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->session()->has('user')) {
+        if ($request->session()->has('users')) {
             // User is already logged in
-            return redirect('/distributordashboard');
+            return redirect('/');
         }
         return $next($request);
         
