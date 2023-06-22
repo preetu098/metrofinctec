@@ -215,6 +215,24 @@ public function employregister(Request $request){
         return back()->with('success','you have successfully register');
 }
             public function distributorlogin(Request $request){
+            //     $request->validate([
+            //         'email'=>'string|required|email',
+            //         'password'=>'string|required'
+            //     ]);
+            //     // dd($request->only(['email','password']));
+            //     $usercredential = $request->only(['email','password']);
+            //     // dd($usercredential);
+            //     if(Auth::attempt($usercredential)){
+            //         echo "hi";die;
+                    
+            //         // $request->session()->regenerate();
+            //         return redirect('/distributordashboard');
+            //    }else{
+            //       return back()->with('error','invalid Crenditials');
+                   
+
+
+
                 $request->validate([
                     'email'=>'string|required|email',
                     'password'=>'string|required'
@@ -226,7 +244,7 @@ public function employregister(Request $request){
                 }else{
                     $request->session()->put('user',$user);
                     return redirect('/distributordashboard');
-
+        
           
             }}
             public function distributordashboard(){

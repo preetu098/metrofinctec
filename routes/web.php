@@ -72,8 +72,8 @@ Route::middleware('checkDistributor')->group(function () {
 });
 
 Route::group(['middleware'=> ['web','checkDistributor']],function(){
-    Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
 });
+Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
 
 
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
