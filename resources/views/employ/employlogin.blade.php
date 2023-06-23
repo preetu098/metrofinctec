@@ -1,11 +1,7 @@
 @extends('layout.header')
 @section('content')
 
-@if (Session::has('error'))
-<script>
-    alert("{{ Session::get('error') }}");
-</script>
-@endif
+
 
 <section class="login-content">
   <div class="container h-100">
