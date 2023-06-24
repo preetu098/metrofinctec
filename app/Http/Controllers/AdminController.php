@@ -162,7 +162,7 @@ public function employregister(Request $request){
             if(Auth::attempt($usercredential)){
         
                 // $request->session()->regenerate();
-                return redirect('/clentdashboard');
+                return redirect('/afterregister/thank-you');
            }else{
               return back()->with('error','invalid Crenditials');
            }      
@@ -179,7 +179,7 @@ public function employregister(Request $request){
             return redirect('/');
         }
     public function clentdashboard(){
-       return view('client.clientdashboard');
+       return view('client.admin.index');
     }
     public function distributor_login(){
         return view('distributor.distributorlogin');
@@ -230,7 +230,6 @@ public function employregister(Request $request){
             //    }else{
             //       return back()->with('error','invalid Crenditials');
                    
-
 
 
                 $request->validate([

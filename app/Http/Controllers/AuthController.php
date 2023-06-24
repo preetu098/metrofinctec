@@ -99,6 +99,7 @@ class AuthController extends Controller
     public function regdatato(Request $request)
     {
         $id = $request->get('id');  
+        // dd($id);
         $update = DB::table('register_data')->where('id', $id)->update([
             'gender' => $request['gender'],
             'address' => $request['address'],
@@ -117,8 +118,12 @@ class AuthController extends Controller
     }
 
     public function afterregister(Request $request)
-    { return view('afterregister');  }
+    { 
+        return view('afterregister'); 
+    }
 
     public function afterregisterprocess()
-    { return view("");}
+    { 
+        return view("");
+    }
 }
