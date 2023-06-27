@@ -30,7 +30,7 @@ class AdminController extends Controller
             'mobile.required' => __('phone is required'),
             
         ]);
-        // echo 'hi';die;
+            // echo 'hi';die;
         $userdata = [
             'name' => $request['name'],
             'email' => $request['email'],
