@@ -58,7 +58,7 @@
             </div>
             <div class="col-md-4 mt-5">
                 <div class="signin-mobile-button text-center"  style="margin-top: 200px;">
-                   <a href="{{url('verifypart2/2')}}"><button class="btn btn-primary btn-qsignin" type="submit" style="width:100%">Invest Now</button>
+                   <a href="{{url('verify-form')}}"><button class="btn btn-primary btn-qsignin" type="submit" style="width:100%">Invest Now</button>
                 </div>
             </div>
             </div>

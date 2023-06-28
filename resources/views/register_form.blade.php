@@ -103,5 +103,5 @@
     }
   </style>
 <div class="center-button">
-<button type="submit" class="btn btn-primary" style="color: white"> <a href="{{ url('client-register')}}"> Client Register Here </a></button>
+    <a href="{{ url('client-register')}}"><button type="submit" class="btn btn-primary" style="color: white">  Client Register Here </button> </a>
 </div>

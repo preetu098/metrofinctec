@@ -57,9 +57,20 @@ Route::post('employ-register',[AdminController::class,'employregister'])->name('
 
 //client 
 Route::post('client_login',[AdminController::class,'client_login'])->name('client_login');
-Route::get('/clentdashboard',[AdminController::class,'clentdashboard']);
+
+Route::get('/client_login',function(){
+    return redirect('/');
+});
 Route::get('/',[AdminController::class,'loadclient']);
 Route::view('client-register','client.clientregister');
+Route::view('verify-form','client.admin.verifyform');
+Route::post('verify-register',[AdminController::class,'verify_register'])->name('verify_register');
+Route::get('verify-register',function(){
+    return redirect('/');
+});
+Route::group(['middleware'=> ['web','checkClient']],function(){
+    Route::get('/clentdashboard',[AdminController::class,'clentdashboard']);
+});
 
 //distributor 
 Route::get('/distributor-login',[AdminController::class,'distributor_login']);

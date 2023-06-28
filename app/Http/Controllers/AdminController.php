@@ -10,6 +10,7 @@ use App\Models\contactUs;
 use App\Models\UserEmploy;
 use Illuminate\Support\Facades\Session;
 use App\Models\Access;
+use App\Models\ClientVerify;
 use DB;
 
 
@@ -248,6 +249,40 @@ public function employregister(Request $request){
             }}
             public function distributordashboard(){
                 return view('distributor.admin.index');
+            }
+            public function verify_register(Request $request){
+                $this->validate($request,[
+                    'gender' => 'required|string',
+                    'marital_status' => 'required|string',
+                    'annual_income' => 'required|string',
+                   'father_name' => 'required|string',
+                   'mother_name' => 'required|string',
+                   'nationality' => 'required|string',
+                   'country_of_birth' => 'required|string',
+                   'address' => 'required|string',
+                   'state' => 'required|string',
+                   'city' => 'required|string',
+                   'pin_code' => 'required|max:6',
+                ]
+            );
+                // echo 'hi' ;die;
+                $userdata = [
+                    'gender'=> $request['gender'],
+                    'marital_status'=> $request['marital_status'],
+                    'annual_income'=> $request['annual_income'],
+                    'father_name'=> $request['father_name'],
+                    'mother_name'=> $request['mother_name'],
+                    'nationality'=> $request['nationality'],
+                    'country_of_birth'=> $request['country_of_birth'],
+                    'address'=> $request['address'],
+                    'state'=> $request['state'],
+                    'city'=> $request['city'],
+                    'pin_code'=> $request['pin_code'],
+                ];
+            //   dd($userdata);
+              $user = ClientVerify::create($userdata)->id;
+            //  return back()->with('success','you have successfully completed the form')l̥
+              return redirect('clentdashboard');
             }
 
 }
