@@ -305,7 +305,8 @@
                                                                                                                     class="signin-mobile-button text-center">
 
 
-                                                                                                                    <input
+                                                                                                                    <input 
+                                                                                                                        class=""
                                                                                                                         type="submit"
                                                                                                                         value="Sign In"
                                                                                                                         class="btn btn-primary text-white"
