@@ -28,7 +28,7 @@ Route::get('/run-migration',function(){
 });
 Route::get('contactUs',[AdminController::class,'contactUs']);
 
-
+Route::get('logout',[AdminController::class,'logout']);
 
 Route::get('/clear-all',function(){
     
@@ -40,10 +40,57 @@ Route::get('/clear-all',function(){
 
 Route::get('/', function () {return view('index');})->name('index');
 Route::post('/',[AdminController::class,'registersubmit'])->name('registersubmit');
+//employ login
+Route::get('/employ-login',function(){
+    return view('employ.employlogin');
+});
+Route::post('/employ-login',[AdminController::class,'employlogin'])->name('employlogin');
+
+//employ register
+Route::get('employ-register',function(){
+    return view('employ.employregister');
+});
+Route::group(['middleware'=> ['web','']],function(){
+});
+Route::get('employ-dashboard',[AdminController::class,'employdashboard']);
+Route::post('employ-register',[AdminController::class,'employregister'])->name('employregister');
+
+//client 
+Route::post('client_login',[AdminController::class,'client_login'])->name('client_login');
+
+Route::get('/client_login',function(){
+    return redirect('/');
+});
+Route::get('/',[AdminController::class,'loadclient']);
+Route::view('client-register','client.clientregister');
+Route::view('verify-form','client.admin.verifyform');
+Route::post('verify-register',[AdminController::class,'verify_register'])->name('verify_register');
+Route::get('verify-register',function(){
+    return redirect('/');
+});
+Route::group(['middleware'=> ['web','checkClient']],function(){
+    Route::get('/clentdashboard',[AdminController::class,'clentdashboard']);
+});
+
+//distributor 
+Route::get('/distributor-login',[AdminController::class,'distributor_login']);
+Route::post('distributor-login',[AdminController::class,'distributorlogin'])->name('distributorlogin');
+Route::get('/distributor-register',[AdminController::class,'distributor_register']);
+Route::post('/distributor-register',[AdminController::class,'distributorregister'])->name('distributorregister');
+
+
+Route::middleware('checkDistributor')->group(function () {
+    // Routes that require the middleware
+});
+
+Route::group(['middleware'=> ['web','checkDistributor']],function(){
+});
+Route::get('/distributordashboard',[AdminController::class,'distributordashboard']);
+
 
 // Route::get('/login', [MutualController::class, 'login'])->name('login');
 
-Route::post('/registersubmit', [MutualController::class, 'registersubmit']);
+// Route::post('/registersubmit', [MutualController::class, 'registersubmit']);
 
 Route::post('/loginsubmit', [MutualController::class, 'loginsubmit']);
 
@@ -108,8 +155,8 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('swp');
     });
 
-    Route::get('/carloan', function () {
-        return view('carloan');
+    Route::get('/one-time-invest', function () {
+        return view('one_time_invest');
     });
 
     Route::get('/aboutus', function () {

@@ -45,7 +45,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mt-5">
-                <h3 class="mt-5 text-center">Thank You</h3>
+                <h3 class="mt-5 text-center">Thank You For Login</h3>
                 <img src="https://i0.wp.com/bemyeye.com/wp-content/uploads/2020/02/Go-in-the-right-direction2.png?fit=768%2C882&ssl=1" />
                     <p>Investment definition is an asset acquired or invested in to build wealth and save money from the
                         hard earned income or appreciation. Investment meaning is primarily to obtain an additional
@@ -53,12 +53,12 @@
             </div>
             <div class="col-md-4 mt-5"> 
                 <div class="signin-mobile-button text-center"  style="margin-top: 200px;">
-                    <a href="{{url('trial')}}"><button class="btn btn-primary btn-qsignin" name="process" type="submit" style="width:100%">Go To Deshboard</button></a>
+                    <a href="{{url('clentdashboard')}}"><button class="btn btn-primary btn-qsignin" name="process" type="submit" style="width:100%">Go To Deshboard</button></a>
                 </div>
             </div>
             <div class="col-md-4 mt-5">
                 <div class="signin-mobile-button text-center"  style="margin-top: 200px;">
-                   <a href="{{('')}}"><button class="btn btn-primary btn-qsignin" type="submit" style="width:100%">Invest Now</button>
+                   <a href="{{url('verify-form')}}"><button class="btn btn-primary btn-qsignin" type="submit" style="width:100%">Invest Now</button>
                 </div>
             </div>
             </div>

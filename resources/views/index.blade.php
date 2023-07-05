@@ -85,20 +85,7 @@
 }
 window.addEventListener("scroll", reveal);
 
-function reveal2(){
-    var reavealp = document.queryselectorAll(".reveal");
-     
-    for(var i= 0;i < reavealp.length;i++){
-        var windowHeight = window.innerHeight;
-        var elementTop = reavealp[i].getBoundingClientRect().top;
-        var elementVisible = 150 ;
-        if(elementTop < windowHeight - elementVisible){
-            reavealp[i].classList.add('active');
-        }else(
-            reaveals[i].classList.remove('active');
-        )
-        }
-    }
+
 
 
 function reveal2() {
@@ -365,15 +352,13 @@ window.addEventListener("scroll", reveal21);
                                         <th>Action</th>
                                     </tr>
                                     <tr>
-                                        <td><a href="pdffiles/Quant Absolute Fund.pdf" target="_blank">Quant Absolute
-                                                Fund (G)</a></td>
+                                        <td><a href="pdffiles/Quant Absolute Fund.pdf" target="_blank">Quant Absolute Fund (G)</a></td>
                                         <td>341.661 Cr</td>
                                         <td>Nav</td>
                                         <td>14.3%</td>
                                         <td>24.9%</td>
                                         <td>16.9%</td>
-                                        <td><button class="btn" style="color:white;background-color:#3CB371">Invest
-                                                Now<button></td>
+                                        <td><a href="{{ url('client-register')}}"><button class="btn" style="color:white;background-color:#3CB371"> Invest Now <button></a></td>
                                     </tr>
                                     <tr>
                                         <td><a href="pdffiles/ICICI Prudential Equity & Debt Fund.pdf"
@@ -803,7 +788,7 @@ window.addEventListener("scroll", reveal21);
                     </div>
                     <div class="col-md-4 reveal">
                         <h5>One Time investment</h5>
-                        <a href="/carloan">
+                        <a href="/one-time-invest">
                             <img src="https://addepar.com/assets/img/clip-financial-report.png" class="mt-5"
                                 style="height:200px;width:300px" />
                         </a>
@@ -1280,6 +1265,37 @@ mutual funds are regularly monitored by SEBI.</p>
                     });
                 });
             });
+
+            $('#loginmodalform').submit(function(e) {
+            e.preventDefault();
+
+            var email = $('#email').val();
+            var password = $('#pwd').val();
+
+            var form = new FormData();
+            form.append('email', email);
+            form.append('password', password);
+            $.ajax({
+                url: "{{ url('loginsubmit') }}",
+                type: "POST",
+                contentType: false,
+                processData: false,
+                data: form,
+                dataType: 'json',
+                success: function(data) {
+               
+                    if(data.type == "success"){
+                        $('#sucessMessage').modal('show');
+                        $('#loginformpopupopen').hide();
+                    }
+                    else{
+                    alert("Incurrect Password");                  
+                    }
+
+                },
+
+            });
+        });
         </script>
     @endsection
     @include('layout.logofooter')

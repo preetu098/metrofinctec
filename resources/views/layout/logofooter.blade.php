@@ -163,22 +163,7 @@
                             </div>
                         </div>
 
-                        <div class="slide-item col-12">
-                            <div class="team-block p-relative">
-                                <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
-                                   
-                                   <div class="row">
-                                   <div class="col-lg-12">
-                                    <div>
-                                    <center>
-                                        <img src="https://media-exp1.licdn.com/dms/image/C5116AQGUL7qVCzQ2qg/profile-displaybackgroundimage-shrink_200_800/0/1517067492712?e=1660176000&v=beta&t=MPl7gBzU1ZmQqnmqsHy74czt1OfI1y2lIgg5KwPI5-0"/>
-</center>
-</div>
-                                        </div>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
+        
 
 
 
@@ -309,6 +294,7 @@
                                 </div>
                             </div>
                         </div>
+              
                         <div class="slide-item col-12">
                             <div class="team-block p-relative">
                                 <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
@@ -317,7 +303,7 @@
                                    <div class="col-lg-12">
                                     <div>
                                     <center>
-                                        <img src="https://21btrj3i7vy42n2f4044931p-wpengine.netdna-ssl.com/wp-content/uploads/2021/09/Bank-of-baroda.jpg"/>
+                                        <img src="{{asset('assets/images/footer_images/1538981449download.png')}}"/>
 </center>
 </div>
                                         </div>
@@ -325,6 +311,711 @@
                                 </div>
                                 
                             </div>
+                            
+                        </div>
+                        <div class="slide-item col-12">
+                            <div class="team-block p-relative">
+                                <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                 
+                                   <div class="row">
+                                   <div class="col-lg-12">
+                                    <div>
+                                    <center>
+                                        <img src="{{asset('assets/images/footer_images/article1.png')}}"/>
+</center>
+</div>
+                                        </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="slide-item col-12">
+                            <div class="team-block p-relative">
+                                <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                 
+                                   <div class="row">
+                                   <div class="col-lg-12">
+                                    <div>
+                                    <center>
+                                        <img src="{{asset('assets/images/footer_images/Bandhan-MF.jpg')}}"/>
+</center>
+</div>
+                                        </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/Bank_of_India.jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/canararobecopng-1538742737113.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (1).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (1).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (2).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (2).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (3).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (3).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+            
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (4).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (4).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (5).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (5).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (6).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (6).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (7).jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (7).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (8).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (9).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (10).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download (11).png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download.jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/download.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/Edelweiss Logo.jpeg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/general-meta-facebook.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/idbi-mutual-vector-logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/IIFLWealth-Asset_Standard_Horizontal.webp')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/logo_AMC.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/logo.svg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/New-AMC-Logo_0.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/nippon.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/quant-logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/rec-logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/samco-mutual-fund-logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/TrustAssetMgmt_Logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/Union-AMC-Logo.png')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="slide-item col-12">
+                                <div class="team-block p-relative">
+                                    <div class="inner-box" style="height:150px;box-shadow:0px 0px 0px">
+                                     
+                                       <div class="row">
+                                       <div class="col-lg-12">
+                                        <div>
+                                        <center>
+                                            <img src="{{asset('assets/images/footer_images/UTI.jpg')}}"/>
+    </center>
+    </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
                             
                         </div>
                     </div>
